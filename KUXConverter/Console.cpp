@@ -46,7 +46,7 @@ void RunConsole() {
 void init() {
 	SetConsoleTitleW(L"Youku Video File Converter");
 	wcout << GetApplicationName() << L" " << GetApplicationVersion() << endl;
-	wcout << L"Copyright (C) " << GetDeveloperInformation() << L". Licenced on GNU Public Licence v3." << endl << endl;
+	wcout << L"Copyright (C) " << GetDeveloperInformation() << L". Licenced under GNU General Public Licence v3." << endl << endl;
 }
 
 int MainPageSelector(bool error) {
@@ -75,7 +75,7 @@ int MainPageSelector(bool error) {
 void PrintApplicationInformation() {
 	wcout << L"Youku Video File Converter " << GetApplicationVersion() << endl << L"Copyright (C) " << GetDeveloperInformation() << L"."
 		<< endl << L"Youku FFmpeg Version: 3.4" << endl << L"Youku Version: 7.5.9.7101" << endl << L"Released on 2018/7/27"
-		<< endl << L"Built with Visual C++ 2017, with Windows XP Support." << endl << L"Licenced on GNU Public Licence v3. View Licence? (y/n)";
+		<< endl << L"Built with Visual C++ 2017, with Windows XP Support." << endl << L"Licenced under GNU General Public Licence v3. View Licence? (y/n)";
 	wstring s;
 	wcin >> s;
 	if (s == L"y") {
