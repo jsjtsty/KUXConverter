@@ -1,7 +1,7 @@
 #include "stdafx.h"
 
 const wchar_t* GetApplicationVersion() {
-	return L"Version 1.0 RC";
+	return L"Version 1.0";
 }
 
 int GetApplicationBuildNumber() {

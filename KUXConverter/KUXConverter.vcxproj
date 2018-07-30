@@ -176,6 +176,19 @@
   <ItemGroup>
     <ResourceCompile Include="Resource.rc" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="nplayer\aliplayerVS.dll" />
+    <None Include="nplayer\ffmpeg.exe" />
+    <None Include="nplayer\libcurl.dll" />
+    <None Include="nplayer\libeay32.dll" />
+    <None Include="nplayer\libexpat.dll" />
+    <None Include="nplayer\msvcp100.dll" />
+    <None Include="nplayer\msvcp120.dll" />
+    <None Include="nplayer\msvcr100.dll" />
+    <None Include="nplayer\msvcr120.dll" />
+    <None Include="nplayer\pthreadVC2.dll" />
+    <None Include="nplayer\ssleay32.dll" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

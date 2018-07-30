@@ -9,8 +9,6 @@
 using namespace std;
 
 void DecodeSingleFile() {
-	wstring t;
-	getline(wcin, t);
 	string path;
 	while (true) {
 		wcin.clear();
@@ -46,11 +44,12 @@ void DecodeSingleFile() {
 	wcout << L"." << endl << L"Press any key to continue." << endl;
 	_getch();
 	wcout << endl;
+	//wstring s;
+	//getline(wcin, s);
 }
 
 void DecodeAllFilesInFolder() {
 	string path, path2;
-	getline(cin, path);
 	WIN32_FIND_DATAA FindFileData;
 	HANDLE hListFile;
 	//char szFilePath[MAX_PATH];
@@ -115,7 +114,7 @@ void DecodeAllFilesInFolder() {
 	}
 	for (vector<string>::iterator pathIt = paths.begin(); pathIt != paths.end(); ++pathIt) {
 		system((".\\kuxdecoder\\ffmpeg.exe -y -i \"" + path + *pathIt + "\" -c:v copy -c:a copy -threads 2 \""
-			+ pathIt->substr(0, pathIt->length() - 5) + ".mp4\"").c_str());
+			+ path + pathIt->substr(0, pathIt->length() - 4) + ".mp4\"").c_str());
 	}
 	decoder.DeleteDecoder();
 	wcout << endl << L"Success. File has been saved to ";
@@ -123,4 +122,6 @@ void DecodeAllFilesInFolder() {
 	wcout << endl << L"Press any key to continue." << endl;
 	_getch();
 	wcout << endl;
+	//wstring s;
+	//getline(wcin, s);
 }

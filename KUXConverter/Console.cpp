@@ -91,6 +91,8 @@ void PrintApplicationInformation() {
 		FreeResource(hResource);
 	}
 	else {
+		wstring s;
 		wcout << endl;
 	}
+	getline(wcin, s);
 }

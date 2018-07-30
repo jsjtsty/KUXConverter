@@ -59,4 +59,39 @@
       <Filter>资源文件</Filter>
     </ResourceCompile>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="nplayer\aliplayerVS.dll">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="nplayer\ffmpeg.exe">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="nplayer\libcurl.dll">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="nplayer\libeay32.dll">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="nplayer\libexpat.dll">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="nplayer\msvcp100.dll">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="nplayer\msvcp120.dll">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="nplayer\msvcr100.dll">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="nplayer\msvcr120.dll">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="nplayer\pthreadVC2.dll">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="nplayer\ssleay32.dll">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
 </Project>
