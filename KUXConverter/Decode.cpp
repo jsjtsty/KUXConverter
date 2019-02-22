@@ -21,7 +21,7 @@ void DecodeSingleFile() {
 			path.erase(path.length() - 1, 1);
 		}
 		if (!Decoder::TestFile(path.c_str())) {
-			wcout << L"File is not exist. Please try again." << endl;
+			wcout << L"File does not exist. Please try again." << endl;
 			continue;
 		}
 		break;
@@ -66,7 +66,7 @@ void DecodeAllFilesInFolder() {
 			path.erase(path.length() - 1, 1);
 		}
 		if ((hListFile = FindFirstFileA(path.c_str(), &FindFileData)) == INVALID_HANDLE_VALUE) {
-			wcout << L"Directory is not exist. Please try again." << endl;
+			wcout << L"Directory does not exist. Please try again." << endl;
 			continue;
 		}
 		break;

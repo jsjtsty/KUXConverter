@@ -74,7 +74,7 @@ int MainPageSelector(bool error) {
 
 void PrintApplicationInformation() {
 	wcout << L"Youku Video File Converter " << GetApplicationVersion() << endl << L"Copyright (C) " << GetDeveloperInformation() << L"."
-		<< endl << L"Youku FFmpeg Version: 3.4" << endl << L"Youku Version: 7.5.9.7101" << endl << L"Released on 2018/7/27"
+		<< endl << L"Youku FFmpeg Version: 3.4" << endl << L"Youku Version: 7.5.9.7101" << endl << L"Released on 2019/2/23"
 		<< endl << L"Built with Visual C++ 2017, with Windows XP Support." << endl << L"Licenced under GNU General Public Licence v3. View Licence? (y/n)";
 	wstring s;
 	wcin >> s;
